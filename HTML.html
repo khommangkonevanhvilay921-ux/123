@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINA Admin Portal</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-placeholder"><img src="logo/Logo.png"class="logo" width="100px"></div>
+            </div>
+            
+            <nav class="menu">
+                <p class="menu-label">ຈັດການ</p>
+                <a href="#" class="menu-item"><i class="fas fa-th-large"></i> ລາຍລະອຽດ</a>
+                
+                <div class="menu-group">
+                    <button class="menu-item dropdown-btn">
+                        <i class="fas fa-user-plus"></i> ຈັດການຄຳຮ້ອງເປີດບັນຊີ <i class="fas fa-chevron-down ml-auto"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a href="Identity/Identity_Verication.html" class="menu-choice">ຄຳຂໍຢືນຢັນຕົວຕົນ</a>
+                        <a href="New.html" class="menu-choice">ຄຳຮ້ອງການກວດສອບ</a>
+                    </div>
+                </div>
+
+                <p class="menu-label">ການຈັດການຜູ້ໃຊ້</p>
+                <a href="#" class="menu-item"><i class="fas fa-users-cog"></i> ຈັດການບັນຊີລູກຄ້າ</a>
+                <a href="#" class="menu-item"><i class="fas fa-user-shield"></i> ຈັດການຜູ້ໃຊ້ລະບົບ</a>
+                <a href="#" class="menu-item"><i class="fas fa-check-double"></i> ບົດບາດ ແລະ ສິດນຳໃຊ້</a>
+                <a href="#" class="menu-item"><i class="fas fa-history"></i> ປະຫວັດການໃຊ້ງານ</a>
+                <a href="#" class="menu-item"><i class="fas fa-key"></i> ຕັ້ງລະຫັດຜ່ານໃໝ່</a>
+                <a href="#" class="menu-item"><i class="fas fa-unlock-alt"></i> ປົດລ໋ອກລະຫັດຜ່ານ</a>
+                
+                <div class="sidebar-footer">
+                    <a href="#" class="menu-item text-danger"><i class="fas fa-sign-out-alt"></i> ອອກຈາກລະບົບ</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-right">
+                    <div class="header-info">
+                        <i class="fas fa-user-circle"></i>
+                        <span>piti_admin (SUPER-ADMIN)</span>
+                    </div>
+                    <div class="header-info">
+                        <i class="far fa-clock"></i>
+                        <span id="current-time">09/02/2026 04:01:59</span>
+                    </div>
+                    <div class="lang-switcher">
+                        <img src="https://flagcdn.com/w20/la.png" alt="Lao"> ລາວ
+                    </div>
+                </div>
+            </header>
+
+            <section id="content-area" class="page-padding">
+                <h2 class="page-title">ລາຍລະອຽດຄຳຮ້ອງຂໍເປີດບັນຊີໃໝ່</h2>
+                <p class="breadcrumb">ຄຳຮ້ອງເປີດບັນຊີໃໝ່ > <span>ລາຍລະອຽດຄຳຮ້ອງຂໍເປີດບັນຊີໃໝ່</span></p>
+
+                <div class="status-banner">ລໍຖ້າການຢືນຢັນ</div>
+
+                <div class="approval-grid">
+                    <div class="approval-box">
+                        <label>ປະຕິເສດໂດຍ:</label>
+                        <p></p>
+                    </div>
+                    <div class="approval-box"><label>ປັບປຸງໂດຍ:</label><p>-</p></div>
+                    <div class="approval-box"><label>ກວດສອບໂດຍ:</label><p>-</p></div>
+                    <div class="approval-box"><label>ອະນຸມັດເບື້ອງຕົ້ນໂດຍ:</label><p>-</p></div>
+                    <div class="approval-box"><label>ອະນຸມັດໂດຍ:</label><p>-</p></div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Request information</h3>
+                        <button class="btn-assign">ມອບໝາຍໃຫ້ຂ້ອຍ</button>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item"><label>Request ID:</label><p>00000000-4</p></div>
+                        <div class="info-item"><label>Request date:</label><p>09/Feb/2026</p></div>
+                        <div class="info-item"><label>Service:</label><p>OPEN_ACCT</p></div>
+                    </div>
+                </div>
+
+                <div class="card mt-20">
+                    <div class="card-header">
+                        <h3>Account owner information<a href="New.html" class="NEW">More Detail</a></h3>
+                        <button class="btn-outline"><i class="fas fa-print"></i> ພິມ</button>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHru2zr2_FndUJ6xn0zXYPBEEGmL74o5Wf_g&s" alt="Avatar" class="profile-img">
+                        <div class="profile-details">
+                            <h4>MR A</h4>
+                            <div class="info-grid">
+                                <div class="info-item"><label>Email:</label><p>ABCDE@gmail.com</p></div>
+                                <div class="info-item"><label>Phone:</label><p>2055555555</p></div>
+                                <div class="info-item"><label>CIF:</label><p>208527</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="card mt-20">
+                    <div class="card-header">
+                        <h3>Account owner information<a href="New.html" class="NEW">More Detail</a></h3>
+                        <button class="btn-outline"><i class="fas fa-print"></i> ພິມ</button>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHru2zr2_FndUJ6xn0zXYPBEEGmL74o5Wf_g&s" alt="Avatar" class="profile-img">
+                        <div class="profile-details">
+                            <h4>MR A</h4>
+                            <div class="info-grid">
+                                <div class="info-item"><label>Email:</label><p>ABCDE@gmail.com</p></div>
+                                <div class="info-item"><label>Phone:</label><p>2055555555</p></div>
+                                <div class="info-item"><label>CIF:</label><p>208527</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="card mt-20">
+                    <div class="card-header">
+                        <h3>Account owner information<a href="New.html" class="NEW">More Detail</a></h3>
+                        <button class="btn-outline"><i class="fas fa-print"></i> ພິມ</button>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHru2zr2_FndUJ6xn0zXYPBEEGmL74o5Wf_g&s" alt="Avatar" class="profile-img">
+                        <div class="profile-details">
+                            <h4>MR A</h4>
+                            <div class="info-grid">
+                                <div class="info-item"><label>Email:</label><p>ABCDE@gmail.com</p></div>
+                                <div class="info-item"><label>Phone:</label><p>2055555555</p></div>
+                                <div class="info-item"><label>CIF:</label><p>208527</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="JavaScribt.js"></script>
+</body>
+</html>

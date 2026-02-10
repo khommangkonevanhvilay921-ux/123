@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FINA Admin Portal - Verification Detail</title>
+    <link rel="stylesheet" href="CSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo-section">
+                <div class="logo-placeholder">
+                    <img src="logo/Logo.png" class="logo" alt="FINA Logo" width="100px">
+                </div>
+            </div>
+            
+            <nav class="menu">
+                <p class="menu-label">ຈັດການ</p>
+                <a href="HTML.html" class="menu-item"><i class="fas fa-th-large"></i> ລາຍລະອຽດ</a>
+                
+                <div class="menu-group">
+                    <button class="menu-item dropdown-btn active">
+                        <i class="fas fa-user-plus"></i> ຈັດການຄຳຮ້ອງເປີດບັນຊີ <i class="fas fa-chevron-down ml-auto"></i>
+                    </button>
+                    <div class="dropdown-container" style="display: block;">
+                        <a href="Identity/Identity_Verication.html" class="menu-choice">ຄຳຂໍຢືນຢັນຕົວຕົນ</a>
+                        <a href="#" class="menu-choice active">ຄຳຮ້ອງການກວດສອບ</a>
+                    </div>
+                </div>
+
+                <p class="menu-label">ການຈັດການຜູ້ໃຊ້</p>
+                <a href="#" class="menu-item"><i class="fas fa-users-cog"></i> ຈັດການບັນຊີລູກຄ້າ</a>
+                <a href="#" class="menu-item"><i class="fas fa-user-shield"></i> ຈັດການຜູ້ໃຊ້ລະບົບ</a>
+                <a href="#" class="menu-item"><i class="fas fa-check-double"></i> ບົດບາດ ແລະ ສິດນຳໃຊ້</a>
+                <a href="#" class="menu-item"><i class="fas fa-history"></i> ປະຫວັດການໃຊ້ງານ</a>
+                <a href="#" class="menu-item"><i class="fas fa-key"></i> ຕັ້ງລະຫັດຜ່ານໃໝ່</a>
+                <a href="#" class="menu-item"><i class="fas fa-unlock-alt"></i> ປົດລ໋ອກລະຫັດຜ່ານ</a>
+                
+                <div class="sidebar-footer">
+                    <a href="#" class="menu-item text-danger"><i class="fas fa-sign-out-alt"></i> ອອກຈາກລະບົບ</a>
+                </div>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-right">
+                    <div class="header-info">
+                        <i class="fas fa-user-circle"></i>
+                        <span>piti_admin (SUPER-ADMIN)</span>
+                    </div>
+                    <div class="header-info">
+                        <i class="far fa-clock"></i>
+                        <span id="current-time">10/02/2026 02:58:00</span>
+                    </div>
+                    <div class="lang-switcher">
+                        <img src="https://flagcdn.com/w20/la.png" alt="Lao"> ລາວ
+                    </div>
+                </div>
+            </header>
+
+            <section id="content-area" class="page-padding">
+
+
+                <div class="card mt-20">
+                    <div class="card-header">
+                        <h1>Account owner information</h1>
+                        <button class="btn-outline"><i class="fas fa-print"></i> ພິມ</button>
+                    </div>
+                    <div class="user-profile">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHru2zr2_FndUJ6xn0zXYPBEEGmL74o5Wf_g&s" alt="Avatar" class="profile-img">
+                        <div class="profile-details">
+                            <h4>Mrkdkjsj</h4>
+                            <div class="info-grid">
+                                <div class="info-item"><label>Email:</label><p>k@gmail.com</p></div>
+                                <div class="info-item"><label>Phone:</label><p>2095555552</p></div>
+                                <div class="info-item"><label>CIF:</label><p>000000</p></div>
+                                <div class="info-item"><label>ວັນເດືອນປີເກີດ:</label><p>10/Feb/1111</p></div>
+                                <div class="info-item"><label>ເພດ:</label><p>ຊາຍ</p></div>
+                                <div class="info-item"><label>ປະເທດເກີດ:</label><p>ລາວ (Lao PDR)</p></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Request information</h3>
+                        <button id="assignBtn" class="btn-assign">ມອບໝາຍໃຫ້ຂ້ອຍ</button>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item"><label>Request ID:</label><p>00000000-4</p></div>
+                        <div class="info-item"><label>Request date:</label><p>10/Feb/2026</p></div>
+                        <div class="info-item"><label>Service:</label><p>OPEN_ACCT</p></div>
+                    </div>
+                </div>
+                <div class="card mt-20">
+                    <div class="card-header">
+                        <h3>Address information (ຂໍ້ມູນທີ່ຢູ່)</h3>
+                    </div>
+                    <div class="info-grid">
+                        <div class="info-item"><label>ບ້ານ (Village):</label><p>ບ້ານ ໂພນສະຫວັນ</p></div>
+                        <div class="info-item"><label>ເມືອງ (District):</label><p>ເມືອງ ສີສັດຕະນາກ</p></div>
+                        <div class="info-item"><label>ແຂວງ (Province):</label><p>ນະຄອນຫຼວງວຽງຈັນ</p></div>
+                    </div>
+                </div>
+
+                <div class="card mt-20">
+                    <div class="card-header">
+                        <h3>Document and signature images</h3>
+                    </div>
+                    <div class="document-grid">
+                        <div class="document-box">
+                            <label>ID Card</label>
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x200?text=ID+Card+Image" alt="ID Card">
+                            </div>
+                        </div>
+                        <div class="document-box">
+                            <label>Signature 1</label>
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x150?text=Signature+1" alt="Signature 1">
+                            </div>
+                        </div>
+                        <div class="document-box">
+                            <label>Signature 2</label>
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/300x150?text=Signature+2" alt="Signature 2">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="document-grid mt-20">
+                        <div class="document-box">
+                            <label>Face video</label>
+                            <div class="img-container">
+                                <i class="fas fa-play-circle fa-3x" style="color: #666;"></i>
+                            </div>
+                        </div>
+                        <div class="document-box">
+                            <label>Left side scan</label>
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/150?text=Left+Side" alt="Left Side">
+                            </div>
+                        </div>
+                        <div class="document-box">
+                            <label>Right side scan</label>
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/150?text=Right+Side" alt="Right Side">
+                            </div>
+                        </div>
+                        <div class="document-box">
+                            <label>Front side scan</label>
+                            <div class="img-container">
+                                <img src="https://via.placeholder.com/150?text=Front+Side" alt="Front Side">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="action-footer mt-20">
+                    <button class="btn-reject" onclick="handleAction('reject')">ປະຕິເສດ (Reject)</button>
+                    <button class="btn-approve" onclick="handleAction('approve')">ອະນຸມັດ (Approve)</button>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="Identity/Script.js"></script>
+</body>
+</html>

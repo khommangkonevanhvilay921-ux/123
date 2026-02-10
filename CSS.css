@@ -1,0 +1,375 @@
+/* Update these variables to change the theme */
+:root {
+    --primary-color: #000033;   /* Deep Blue from image_594b09 */
+    --accent-color: #d32f2f;    /* Red for Assign button */
+    --sidebar-bg: #ffffff;
+    --text-main: #333333;
+    --bg-light: #f4f7f6;
+    --border-color: #e0e0e0;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    user-select: none;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 260px;
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-section {
+    padding: 15px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.menu-choice{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    border-radius: 8px;
+    border: none;
+    background: none;
+    margin-bottom: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+/* ຕັ້ງຄ່າໃຫ້ລູກສອນມີການເຄື່ອນໄຫວແບບນິ້ມນວນ (Animation) */
+.dropdown-btn .fa-chevron-down {
+    transition: transform 0.3s ease;
+}
+
+/* ເມື່ອ JavaScript toggle class 'active', ໃຫ້ລູກສອນໝູນປິ່ນຂຶ້ນ */
+.dropdown-btn.active .fa-chevron-down {
+    transform: rotate(180deg);
+}
+.menu-choice:hover {
+    background: #f0f2f5;
+    color: var(--primary-color);
+}
+.menu {
+    padding: 15px;
+    flex-grow: 1;
+}
+
+.menu-label {
+    font-size: 12px;
+    color: #888;
+    margin: 20px 0 10px 10px;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    border-radius: 8px;
+    border: none;
+    background: none;
+    margin-bottom: 5px;
+    transition: 0.2s;
+    /* width: 100%;  */
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+
+.menu-item i { margin-right: 10px; width: 20px; }
+.menu-item:hover, .menu-item.active {
+    /* background: var(--primary-color); */
+    /* color: white; */
+    background: #f0f2f5;
+    color: var(--primary-color);
+    border-left: 4px solid var(--primary-color); 
+}
+
+.ml-auto { margin-left: auto; }
+.text-danger { color: #d32f2f !important; }
+
+/* Main Content Styling */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-header {
+    height: 60px;
+    background: var(--primary-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0 30px;
+}
+
+.header-right { display: flex; gap: 25px; align-items: center; }
+.header-info { display: flex; align-items: center; gap: 8px; font-size: 14px; }
+
+/* Page Elements */
+.page-padding { padding: 30px; }
+.page-title { font-size: 20px; margin-bottom: 5px; }
+.breadcrumb { font-size: 14px; color: #888; margin-bottom: 25px; }
+.breadcrumb span { color: #cc9966; } /* Gold color from figma */
+
+.status-banner {
+    background: #e8eaf6;
+    color: #5c6bc0;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.approval-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.approval-box {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    border-left: 4px solid var(--border-color);
+}
+
+.approval-box label { font-size: 12px; color: #888; }
+
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-item label { display: block; font-size: 12px; color: #888; margin-bottom: 5px; }
+
+/* Buttons */
+.btn-assign {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-assign:hover { opacity: 0.9; }
+
+.btn-outline {
+    border: 1px solid var(--border-color);
+    background: white;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.profile-img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--border-color);
+}
+.user-profile {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+/**/
+.profile-img {
+     border-radius: 50%;
+     border: 2px solid var(--border-color); }
+.mt-20 { 
+    margin-top: 5px;
+ }
+.card { background: white;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-top: 10px; }
+.card-header { 
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 20px;
+     border-bottom: 1px solid #eee;
+     padding-bottom: 15px; }
+
+.info-grid { 
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px; }
+.info-item label {
+     font-size: 12px;
+     color: #888;
+     display: block; 
+     margin-bottom: 5px; }
+
+.btn-assign { 
+     background: var(--danger);
+     color: white;
+     border: none; 
+     padding: 10px 20px; 
+     border-radius: 6px;
+     cursor: pointer;
+     font-weight: bold; }
+.mt-20 {
+     margin-top: 20px; }
+
+/* Owner Profile Section */
+.owner-profile-section { 
+    display: flex;
+    gap: 30px;
+    align-items: flex-start; }
+.owner-avatar { 
+    width: 100px;
+     height: 100px;
+     border-radius: 50%;
+     border: 3px solid var(--border-color);
+     object-fit: cover; }
+.owner-info-grid { 
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px; flex: 1; }
+
+.document-grid {
+     display: grid; 
+     grid-template-columns: repeat(3, 1fr); 
+     gap: 15px; margin-top: 15px; }
+.img-placeholder { 
+    height: 150px;
+    background: #f9f9f9; 
+    border: 1px dashed #ccc; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: #aaa; 
+    border-radius: 8px; }
+    /* Document Grid Styling */
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.document-box label {
+    font-size: 12px;
+    color: #888;
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.img-container {
+    background: #fcfcfc;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.img-container:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* Action Footer Buttons */
+.action-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.btn-approve {
+    background: #2e7d32; /* ສີຂຽວທະນາຄານ */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-reject {
+    background: #d32f2f; /* ສີແດງ */
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn-approve:hover { background: #1b5e20; transform: translateY(-2px); }
+.btn-reject:hover { background: #b71c1c; transform: translateY(-2px); }
+.NEW{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 12px;
+    border: 1px solid var(--primary-color);
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: 0.2s;
+    margin-left: 10px;}
+.NEW:hover {
+    background: var(--primary-color);
+    color: white;
+}

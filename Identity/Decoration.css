@@ -1,0 +1,134 @@
+:root {
+    --primary-color: #000033; 
+    --bg-light: #f4f7f6;
+    --border-color: #e0e0e0;
+    --text-main: #333333;
+    --danger: #d32f2f;
+}
+
+/* ປ້ອງກັນການ Copy ແລະ Highlight ສີ */
+.no-select {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.logo{
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    user-select: none;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Arial, sans-serif; }
+
+body { background-color: var(--bg-light); color: var(--text-main); }
+.container { display: flex; min-height: 100vh; }
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    background: var(--sidebar-bg);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+}
+.logo-section {
+    padding: 15px 20px;
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+}
+.menu-choice{
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    border-radius: 8px;
+    border: none;
+    background: none;
+    margin-bottom: 5px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.menu { padding: 15px; flex-grow: 1; }
+.menu-label {
+    font-size: 12px;
+    color: #888;
+    margin: 20px 0 10px 10px;
+    text-transform: uppercase;
+}
+
+.menu-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    text-decoration: none;
+    color: var(--text-main);
+    border-radius: 8px;
+    border: none;
+    background: none;
+    margin-bottom: 5px;
+    transition: 0.2s;
+    /* width: 100%;  */
+    cursor: pointer;
+    border-left: 4px solid transparent;
+}
+
+/* ແກ້ໄຂອາການປຸ່ມຂະຫຍາຍເວລາ Hover */
+.menu-item i { margin-right: 10px; width: 20px; }
+.menu-item:hover, .menu-item.active {
+    /* background: var(--primary-color); */
+    /* color: white; */
+    background: #f0f2f5;
+    color: var(--primary-color);
+    border-left: 4px solid var(--primary-color); 
+}
+.ml-auto { margin-left: auto; }
+.text-danger { color: #d32f2f !important; }
+
+
+.dropdown-container { display: none; padding-left: 20px; background: #fafafa; }
+.menu-choice { display: block; padding: 10px 15px; text-decoration: none; color: #666; font-size: 13px; }
+.menu-choice:hover { color: var(--primary-color); }
+
+/* ລູກສອນ Dropdown */
+.dropdown-btn i.fa-chevron-down { transition: transform 0.3s ease; }
+.dropdown-btn.active i.fa-chevron-down { transform: rotate(180deg); }
+
+/* Main Content */
+.main-content { flex-grow: 1; }
+.top-header { height: 60px; background: var(--primary-color); color: white; display: flex; align-items: center; justify-content: flex-end; padding: 0 30px; }
+.header-right { display: flex; gap: 20px; font-size: 14px; }
+/* Page Elements */
+.page-padding { padding: 30px; }
+.page-title { font-size: 20px; margin-bottom: 5px; }
+.breadcrumb { font-size: 14px; color: #888; margin-bottom: 25px; }
+.breadcrumb span { color: #cc9966; } /* Gold color from figma */
+.status-banner {
+    background: #e8eaf6;
+    color: #5c6bc0;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.card { background: white; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.05); }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 15px; }
+
+.info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.info-item label { font-size: 12px; color: #888; display: block; margin-bottom: 5px; }
+
+.btn-assign { background: var(--danger); color: white; border: none; padding: 10px 20px; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.mt-20 { margin-top: 20px; }
+
+/* Owner Profile Section */
+.owner-profile-section { display: flex; gap: 30px; align-items: flex-start; }
+.owner-avatar { width: 100px; height: 100px; border-radius: 50%; border: 3px solid var(--border-color); object-fit: cover; }
+.owner-info-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; flex: 1; }
+
+.document-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin-top: 15px; }
+.img-placeholder { height: 150px; background: #f9f9f9; border: 1px dashed #ccc; display: flex; align-items: center; justify-content: center; color: #aaa; border-radius: 8px; }
